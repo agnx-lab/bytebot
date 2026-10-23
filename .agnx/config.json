@@ -1,0 +1,11 @@
+{
+  "appId": "bytebot",
+  "installState": "installed",
+  "launchMode": "packaged",
+  "source": {
+    "kind": "github",
+    "url": "https://github.com/bytebot-ai/bytebot",
+    "commit": "3d37894ce07ef8d8b40adc7fd309ad96c2a71313"
+  },
+  "updatedAt": "2026-10-19T00:00:00.000Z"
+}

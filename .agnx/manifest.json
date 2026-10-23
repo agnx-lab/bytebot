@@ -1,0 +1,28 @@
+{
+  "id": "bytebot",
+  "name": "Bytebot",
+  "version": "0.1.0",
+  "description": "Agnx 外置子应用：Bytebot 整仓 + packages/bytebot-ui 自带 Next.js Web UI（Express 自定义 server）",
+  "engines": {
+    "agnx": ">=1.0.0"
+  },
+  "main": "./dist/index.js",
+  "icon": "./packages/bytebot-ui/public/bytebot_square_light.svg",
+  "sidecar": {
+    "supervised": true,
+    "ensureTool": ".agnx/tools/ensure-bytebot-ui.mjs",
+    "stateFile": "bytebot.json",
+    "defaultPort": 8103
+  },
+  "guest": {
+    "kind": "web",
+    "auth": "none",
+    "capabilities": ["cookies", "websocket"],
+    "preferStrategy": "auto"
+  },
+  "contributes": {
+    "commands": [{ "id": "bytebot.open", "title": "Bytebot" }],
+    "panels": [{ "id": "bytebot.main", "title": "Bytebot" }]
+  },
+  "platforms": { "desktop": "supported", "web": "supported", "mobile": "unsupported" }
+}

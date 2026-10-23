@@ -1,0 +1,27 @@
+{
+  "name": "@agnx-sub/com.agnx.bytebot",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Agnx 外置子应用胶水：Bytebot 仓内 packages/bytebot-ui（Next.js）+ iframe",
+  "main": "dist/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "build": "node ./scripts/build.mjs"
+  },
+  "peerDependencies": {
+    "@agnx-lab/app-sdk": "*",
+    "lucide-react-native": "*",
+    "react": "*",
+    "react-native": "*",
+    "react-native-unistyles": "*",
+    "react-native-svg": "*"
+  },
+  "peerDependenciesMeta": {
+    "@agnx-lab/app-sdk": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0"
+  }
+}
